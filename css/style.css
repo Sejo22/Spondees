@@ -163,6 +163,7 @@ h6 {
     border-radius: 8px;
     width: max-content;
     padding: 8px 16px;
+    margin-bottom: 24px;
 }
 
 .search-box input {
@@ -366,6 +367,11 @@ h6 {
 .bottom-footer {
     display: grid;
     place-content: center;
+}
+
+.copyright-text {
+    font-size: 14px;
+    color: var(--text-color);
 }
 
 
