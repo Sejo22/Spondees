@@ -1,13 +1,21 @@
 const menuOpen = document.querySelector(".mobile-menu__open");
 const menuClose = document.querySelector(".mobile-menu__close");
-
+const mobileNav = document.querySelector(".mobile-nav");
 const navWrapper = document.querySelector(".nav-wrapper");
+
 menuOpen.addEventListener("click", () => {
-  navWrapper.classList.add("active");
+  // navWrapper.classList.add("active");
+  mobileNav.classList.add("active");
+  // document.body.style.overflow = "hidden";
+  document.body.style.position = "fixed";
 });
 
 menuClose.addEventListener("click", () => {
-  navWrapper.classList.remove("active");
+  // navWrapper.classList.remove("active");
+  mobileNav.classList.remove("active");
+  document.body.style.position = "relative";
+
+  // document.body.style.overflow = "auto";
 });
 
 //SEARCH BOOKS
