@@ -23,10 +23,8 @@
     text-decoration: none;
     list-style-type: none;
     transition: all ease .2s;
-}
-
-html * {
-    border: solid 1px red;
+    scroll-behavior: smooth;
+    scroll-padding: 2rem;
 }
 
 body {
@@ -87,10 +85,13 @@ a {
 }
 
 
-
 .nav-list .nav-item .nav-link,
 .btn-link {
     font-weight: 500;
+}
+
+.nav-link:hover {
+    opacity: .5;
 }
 
 .btn {
@@ -110,6 +111,15 @@ a {
 
 .btn i {
     margin-right: 4px;
+}
+
+.primary-btn:hover {
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+.primary-btn:hover a {
+    color: var(--black-color);
 }
 
 .mobile-menu i {
@@ -370,7 +380,7 @@ table tbody tr td {
     box-shadow: 0 16px 24px -5px rgba(2, 44, 193, .1);
     padding: 24px;
     border-radius: 16px;
-    width: 25%;
+    width: calc(25% - 32px);
     align-self: stretch;
     /* flex: 1 1; */
 }
@@ -454,7 +464,7 @@ table tbody tr td {
 
 .nav-link.footer-nav {
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .social-icons {
@@ -522,10 +532,10 @@ table tbody tr td {
         max-width: 640px;
     }
 
+
     .container:first-child {
         margin-bottom: 32px;
-        margin-top: 0;
-        overflow-x: clip;
+        margin-top: 4px;
     }
 
     .mobile-menu {
@@ -533,21 +543,27 @@ table tbody tr td {
         cursor: pointer;
     }
 
-    .mobile-nav {
+    .mobile-nav-wrapper {
         position: absolute;
+        width: 0px;
+        overflow: hidden;
         top: 0;
-        right: -600px;
+        right: 0;
+        background-color: var(--white-color);
+        z-index: 999;
+        height: 100svh;
+        display: block;
+    }
+
+    .mobile-nav-wrapper.active {
+        right: 0;
+        width: 300px;
+    }
+
+    .mobile-nav {
         padding: 24px;
         display: block;
-        width: 300px;
-        background-color: var(--white-color);
-        height: 100%;
     }
-
-    .mobile-nav.active {
-        right: 0;
-    }
-
 
     .nav-wrapper {
         display: none;
