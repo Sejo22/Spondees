@@ -60,14 +60,40 @@
           efficiency and offer a diverse range of books.
         </p>
         <div class="search-box">
-          <input type="search" placeholder="Enter book title..." />
-          <button type="button" class="btn primary-btn">
+          <input
+            id="search-input"
+            type="search"
+            placeholder="Enter book title..."
+          />
+          <button
+            id="search-button"
+            type="submit"
+            class="btn primary-btn search-items"
+          >
             <i class="fa-solid fa-magnifying-glass"></i>
             <span class="nav-link">Search</span>
           </button>
         </div>
+        <div class="results" id="results"></div>
+        <!-- <div class="results" id="results">
+          <h4>Search Results</h4>
+          <div class="results-wrapper">
+            <div class="results-items">
+              <div class="result-item">1984</div>
+            </div>
+            <div class="item-details">
+              <div class="item-detail">
+                <h3>1984</h3>
+                <p>A dystopian novel portraying a totalitarian society.</p>
+                <p><strong>Author:</strong> George Orwell</p>
+                <p><strong>Published:</strong> 1949</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
         <img src="assets/books_spondees.png" alt="" />
       </section>
+
       <section id="about-us" class="about-us container">
         <div class="section-name-wrapper">
           <span class="section-name">About us</span>
@@ -150,32 +176,39 @@
         <div class="feature-cards">
           <div class="feature-card">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <h6 class="card-title">Search API</h5>
+            <h6 class="card-title">Search API</h6>
             <span class="card-desc"> Retrieves up to 20 search results. </span>
           </div>
           <div class="feature-card">
             <i class="fa-solid fa-book"></i>
-            <h6 class="card-title">BookDetail API</h5>
-            <span class="card-desc">Provides price and availability of a book.</span>
-          </div><div class="feature-card">
+            <h6 class="card-title">BookDetail API</h6>
+            <span class="card-desc"
+              >Provides price and availability of a book.</span
+            >
+          </div>
+          <div class="feature-card">
             <i class="fa-solid fa-arrow-pointer"></i>
-            <h6 class="card-title">Order API</h5>
-            <span class="card-desc">Facilitates one-click order submission.</span>
-          </div><div class="feature-card">
+            <h6 class="card-title">Order API</h6>
+            <span class="card-desc"
+              >Facilitates one-click order submission.</span
+            >
+          </div>
+          <div class="feature-card">
             <i class="fa-solid fa-file-code"></i>
-            <h6 class="card-title">Results Format</h5>
-            <span class="card-desc">Search results are in popular JSON format.</span>
+            <h6 class="card-title">Results Format</h6>
+            <span class="card-desc"
+              >Search results are in popular JSON format.</span
+            >
           </div>
         </div>
       </section>
       <section class="cta-section container">
         <div class="content-wrapper">
           <div class="cta-text">
-            <h5 class="cta-title">
-              Get in touch with us.
-            </h5>
+            <h5 class="cta-title">Get in touch with us.</h5>
             <p class="cta-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, vitae?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+              vitae?
             </p>
           </div>
           <div class="cta-buttons">
@@ -208,18 +241,18 @@
         </nav>
         <div class="social-icons">
           <a href="#" class="social-icon">
-             <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-facebook"></i>
           </a>
           <a href="#" class="social-icon">
-              <i class="fa-brands fa-x"></i>
+            <i class="fa-brands fa-x"></i>
           </a>
           <a href="#" class="social-icon">
-              <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-instagram"></i>
           </a>
         </div>
       </div>
     </footer>
-    <hr class="container divider">
+    <hr class="container divider" />
     <div class="bottom-footer container">
       <span class="copyright-text">
         Copyright 2024 - Books and Periodicals Agency Ltd.

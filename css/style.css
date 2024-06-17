@@ -26,6 +26,7 @@
 
 body {
     overflow-x: hidden;
+    background-color: var(--bg-color);
 }
 
 a {
@@ -161,13 +162,63 @@ h6 {
 .search-box {
     border: #ddd 1px solid;
     border-radius: 8px;
-    width: max-content;
-    padding: 8px 16px;
     margin-bottom: 24px;
+    background-color: var(--white-color);
 }
 
 .search-box input {
     all: unset;
+    padding: 16px;
+}
+
+.search-box .btn {
+    margin-right: 8px;
+}
+
+.results {
+    width: 100%;
+    background-color: var(--white-color);
+    padding: 2rem 1rem;
+    margin-bottom: 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 32px -10px rgba(2, 44, 193, .05);
+    display: none;
+}
+
+.results h4 {
+    margin-bottom: 24px;
+    color: var(--primary-color)
+}
+
+.results-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 32px;
+}
+
+.result-item {
+    /* padding: 1rem .5rem; */
+    cursor: pointer;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.result-item:hover {
+    color: var(--primary-color)
+}
+
+.results-items,
+.item-details {
+    flex: 1 1;
+}
+
+.json-data {
+    white-space: pre-wrap;
+    border: 1px solid #eee;
+    border-radius: 16px;
+    margin-top: 8px;
+    padding: 16px;
 }
 
 .hero img {
