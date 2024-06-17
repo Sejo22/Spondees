@@ -271,6 +271,63 @@ h6 {
     max-width: 100%;
 }
 
+
+
+.catalogue .section__text {
+    margin-bottom: 24px;
+}
+
+table {
+    background-color: var(--white-color);
+    width: 100%;
+    border-spacing: 0;
+    color: var(--primary-color);
+    margin-bottom: 64px;
+}
+
+table thead th {
+    background-color: rgba(2, 44, 193, .05);
+    width: 50%;
+}
+
+
+table thead th,
+table tbody tr td {
+    border: 1px solid #eee;
+    text-align: left;
+    padding: 16px;
+}
+
+table thead th:nth-child(1),
+table tbody tr td:nth-child(1) {
+    border-right: 0;
+}
+
+table tbody tr td {
+    border-top: 0;
+    color: var(--text-color)
+}
+
+.catalogue-lists {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.catalogue-list__title {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.catalogue-lists ul li {
+    margin-bottom: 8px;
+}
+
+.catalogue-lists ul li:hover a {
+    color: var(--text-color)
+}
+
 .features .section__title,
 .feature-card .card-desc {
     text-align: center;
