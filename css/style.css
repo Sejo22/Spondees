@@ -234,6 +234,11 @@ h6 {
     flex: 1 1;
 }
 
+.results-items {
+    max-height: 600px;
+    overflow: auto;
+}
+
 .json-data {
     white-space: pre-wrap;
     border: 1px solid #eee;
@@ -556,7 +561,6 @@ table tbody tr td {
     }
 
     .mobile-nav-wrapper.active {
-        right: 0;
         width: 300px;
     }
 

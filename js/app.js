@@ -2,16 +2,24 @@ const menuOpen = document.querySelector(".mobile-menu__open");
 const menuClose = document.querySelector(".mobile-menu__close");
 const mobileNav = document.querySelector(".mobile-nav-wrapper");
 const navWrapper = document.querySelector(".nav-wrapper");
+const navLinks = document.querySelectorAll(".nav-link");
 
-menuOpen.addEventListener("click", () => {
+function menuOpened() {
   mobileNav.classList.add("active");
   document.body.style.overflow = "hidden";
-});
+}
 
-menuClose.addEventListener("click", () => {
+function menuClosed() {
   mobileNav.classList.remove("active");
-
   document.body.style.overflow = "auto";
+}
+
+menuOpen.addEventListener("click", menuOpened);
+
+menuClose.addEventListener("click", menuClosed);
+
+navLinks.forEach((navLink) => {
+  navLink.addEventListener("click", menuClosed);
 });
 
 //SEARCH BOOKS
